@@ -9,13 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid black;
     flex-wrap: wrap;
 }
 
 .main-itens {
     width: 100%;
-    border: solid black;
+
 }
 
 .main-header {
@@ -23,7 +22,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     height: 30rem;
-    border: solid black;
 }
 
 .main-header-item {
@@ -37,9 +35,9 @@ body {
 .main-sub-header {
     display: flex;
     flex-direction: row;
+    height: 20rem;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .main-sub-header-item {
@@ -52,6 +50,7 @@ body {
 
 .main-body {
     display: flex;
+    height: 30rem;
     flex-direction: row;
     justify-content: center;
 }
@@ -60,7 +59,18 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
 
+.primary-color {
+    background-color: #dce9ef;
+}
+
+.secondary-color {
+    background-color: #13f0cb;
+}
+
+.suport-color {
+    background-color: #C7D3DD;
 }
 
 .red {
