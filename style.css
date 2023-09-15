@@ -17,7 +17,7 @@ body {
     width: 100%;
 }
 
-.menu-header{
+.menu-header {
     height: 5rem;
     width: 100%;
     display: flex;
@@ -26,26 +26,23 @@ body {
     gap: 4rem;
 }
 
-.menu-header-item{
+.menu-header-item {
     display: flex;
-    border: solid black;
-    border-radius: 100px;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     width: 7rem;
     margin-left: 2rem;
-
 }
 
-.menu-header-item:hover{   
+.menu-header-item:hover {
     cursor: pointer;
     color: aliceblue;
 }
 
 .main-header {
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     height: 40rem;
 }
 
@@ -58,17 +55,19 @@ body {
     height: 100%;
 }
 
-.main-header-item-left{
+.main-header-item-left {
     margin: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.main-header-item-profile:hover{
+
+.main-header-item-profile:hover {
     width: 39rem;
     height: 39rem;
 
 }
+
 .main-sub-header {
     display: flex;
     flex-direction: row;
@@ -89,7 +88,8 @@ body {
     flex-direction: row;
     justify-content: center;
 }
-.main-body-item{
+
+.main-body-item {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -97,7 +97,7 @@ body {
     height: 600px;
 }
 
-.skill-img{
+.skill-img {
     width: 15rem;
     height: 15rem;
 }
@@ -113,14 +113,16 @@ body {
     justify-content: center;
     justify-content: space-between;
 }
-.main-footer-item{
+
+.main-footer-item {
     display: flex;
     flex-direction: column;
     margin: 2rem;
     gap: 1rem;
-   
+
 }
-.main-footer-left{
+
+.main-footer-left {
     display: flex;
     justify-content: row;
     gap: 2rem;
@@ -168,4 +170,57 @@ body {
 
 .secondary-text {
     font-size: 1.3rem;
+}
+
+.element-gaming {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 66%;
+    left: 0;
+    animation: moveElement 7s linear infinite;
+}
+
+.element-gaming-woman{
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 66%;
+    left: 0;
+    animation: moveElementWoman 16s linear infinite;
+}
+.element-gaming-boble{
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    top: 66%;
+    right: 0;
+    animation: moveElementBoble 16s linear infinite; 
+}
+@keyframes moveElement {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: calc(100% - 30px);
+    }
+}
+
+
+@keyframes moveElementWoman {
+    0% {
+        left: 10;
+    }
+    100% {
+        left: calc(100% - 30px);
+    }
+}
+
+@keyframes moveElementBoble {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: calc(100% - 30px);
+    }
 }
