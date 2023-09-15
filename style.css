@@ -13,6 +13,7 @@ body {
 }
 
 .main-itens {
+    padding: 1rem;
     width: 100%;
 }
 
@@ -27,16 +28,19 @@ body {
 
 .menu-header-item{
     display: flex;
+    border: solid black;
+    border-radius: 100px;
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    width: 7rem;
     margin-left: 2rem;
 
 }
 
-.menu-header-item:hover{
-    background-color: #C7D3DD;
+.menu-header-item:hover{   
     cursor: pointer;
+    color: aliceblue;
 }
 
 .main-header {
@@ -77,7 +81,6 @@ body {
     margin: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     height: 100%;
 }
 
@@ -91,6 +94,7 @@ body {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    height: 600px;
 }
 
 .skill-img{
@@ -107,6 +111,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-between;
+}
+.main-footer-item{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    gap: 1rem;
+   
+}
+.main-footer-left{
+    display: flex;
+    justify-content: row;
+    gap: 2rem;
 }
 
 .primary-color {
@@ -150,5 +167,5 @@ body {
 }
 
 .secondary-text {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
