@@ -14,24 +14,57 @@ body {
 
 .main-itens {
     width: 100%;
+}
 
+.menu-header{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.menu-header-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-left: 2rem;
+
+}
+
+.menu-header-item:hover{
+    background-color: #C7D3DD;
+    cursor: pointer;
 }
 
 .main-header {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 30rem;
+    flex-direction: row;   
+    height: 40rem;
 }
 
 .main-header-item {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0.5rem;
     width: 50%;
     height: 100%;
 }
 
+.main-header-item-left{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-header-item-profile:hover{
+    width: 39rem;
+    height: 39rem;
+
+}
 .main-sub-header {
     display: flex;
     flex-direction: row;
@@ -41,18 +74,33 @@ body {
 }
 
 .main-sub-header-item {
+    margin: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 19rem;
     height: 100%;
 }
 
 .main-body {
     display: flex;
-    height: 30rem;
     flex-direction: row;
     justify-content: center;
+}
+.main-body-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.skill-img:hover {
+    width: 16rem;
+    height: 16rem;
 }
 
 .main-footer {
@@ -98,5 +146,9 @@ body {
 }
 
 .primary-text {
-    font-size: 5rem;
+    font-size: 3rem;
+}
+
+.secondary-text {
+    font-size: 2rem;
 }
