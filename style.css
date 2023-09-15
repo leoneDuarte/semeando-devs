@@ -181,7 +181,7 @@ body {
     animation: moveElement 7s linear infinite;
 }
 
-.element-gaming-woman{
+.element-gaming-woman {
     height: 10rem;
     width: 10rem;
     position: absolute;
@@ -189,18 +189,21 @@ body {
     left: 0;
     animation: moveElementWoman 16s linear infinite;
 }
-.element-gaming-boble{
+
+.element-gaming-boble {
     height: 10rem;
     width: 10rem;
     position: absolute;
     top: 66%;
     right: 0;
-    animation: moveElementBoble 16s linear infinite; 
+    animation: moveElementBoble 16s linear infinite;
 }
+
 @keyframes moveElement {
     0% {
         left: 0;
     }
+
     100% {
         left: calc(100% - 30px);
     }
@@ -211,6 +214,7 @@ body {
     0% {
         left: 10;
     }
+
     100% {
         left: calc(100% - 30px);
     }
@@ -220,7 +224,100 @@ body {
     0% {
         right: 0;
     }
+
     100% {
         right: calc(100% - 30px);
+    }
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    list-style: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+
+    margin: 0;
+    padding: 0;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+}
+
+#nav li a:hover {
+    color: rgb(253, 253, 253);
+    background: #191919;
+}
+
+.show-menu {    
+    text-decoration: none;
+    color: #000000;
+    text-align: left;
+    padding: 10px 5px;
+    display: none;
+}
+
+.show-menu b {
+    font-size: 30px;
+}
+
+.show-menu span {
+    margin-right: 1em;
+    float: right;
+}
+
+#nav input[type=checkbox] {
+    display: none;
+}
+
+#nav input[type=checkbox]:checked~#menus {
+    display: block;
+}
+
+/*css-styles-responsive*/
+@media screen and (max-width:768px) {
+    #nav ul {
+        position: static;
+        display: none;
+    }
+
+    #nav li {
+        border-bottom: 1px solid #333;
+    }
+
+    #nav ul li,
+    #nav li a {
+        width: 100%;
+    }
+
+    #nav li a {
+        display: block;
+        height: auto;
+        line-height: normal;
+    }
+
+    #nav li a {
+        text-align: left;
+    }
+
+    .show-menu {
+        display: block !important;
+        line-height: 30px;
+    }
+
+    .show-menu:hover {
+        cursor: pointer;
+    }
+
+    label {
+        margin: 0 !important;
     }
 }
