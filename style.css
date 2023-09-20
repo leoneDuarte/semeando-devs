@@ -62,12 +62,6 @@ body {
     flex-direction: column;
 }
 
-.main-header-item-profile:hover {
-    width: 39rem;
-    height: 39rem;
-
-}
-
 .main-sub-header {
     display: flex;
     flex-direction: row;
@@ -108,29 +102,26 @@ body {
     height: 15rem;
 }
 
-.skill-img:hover {
-    width: 16rem;
-    height: 16rem;
-}
+
 
 .main-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-between;
 }
 
 .main-footer-item {
     display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    gap: 1rem;
-
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 90px;
 }
 
 .main-footer-left {
     display: flex;
     justify-content: row;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -321,6 +312,19 @@ body {
 
     .show-menu:hover {
         cursor: pointer;
+    }
+
+    .main-header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .main-header-item{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
     }
 
     label {
