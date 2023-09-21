@@ -14,6 +14,8 @@ body {
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .section-item {
@@ -21,7 +23,6 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-
 .section-subitem {
     height: 5rem;
     width: 5rem;
@@ -30,7 +31,6 @@ body {
     animation: spin 5.1s linear infinite;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
 }
-
 .section-subitem:hover {
     background-color: rgb(255, 140, 0);
     transform: rotate(360deg);
@@ -51,4 +51,34 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+
+.section2 {
+    height: 10rem;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section2-subitem {
+    height: 5rem;
+    width: 5rem;   
+}
+
+.section2-subitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.section2-subitem img{
+    height: 5rem;
+    width: 5rem; 
 }
