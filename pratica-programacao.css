@@ -27,8 +27,8 @@ body {
     width: 5rem;
     background-color: bisque;
     transition: transform 1.3s;
-    animation: spin 1s linear infinite;
-
+    animation: spin 5.1s linear infinite;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
 }
 
 .section-subitem:hover {
@@ -52,5 +52,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
-
