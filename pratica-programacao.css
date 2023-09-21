@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.section {
+    height: 10rem;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.section-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-subitem {
+    height: 5rem;
+    width: 5rem;
+    background-color: bisque;
+    transition: transform 1.3s;
+    animation: spin 1s linear infinite;
+
+}
+
+.section-subitem:hover {
+    background-color: rgb(255, 140, 0);
+    transform: rotate(360deg);
+    border-radius: 45%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+        background-color: red;
+        margin-left: 10rem;
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
