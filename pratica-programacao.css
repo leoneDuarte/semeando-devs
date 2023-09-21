@@ -7,7 +7,8 @@ body {
 
 
 .section {
-    height: 10rem;
+    height: 100%;
+    padding: 2rem;
     width: 100%;
     background-color: aquamarine;
     display: flex;
@@ -15,7 +16,6 @@ body {
     gap: 2rem;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .section-item {
@@ -31,6 +31,7 @@ body {
     animation: spin 5.1s linear infinite;
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
 }
+
 .section-subitem:hover {
     background-color: rgb(255, 140, 0);
     transform: rotate(360deg);
@@ -56,7 +57,8 @@ body {
 
 
 .section2 {
-    height: 10rem;
+    height: 100%;
+    padding: 2rem;
     width: 100%;
     background-color: aquamarine;
     display: flex;
