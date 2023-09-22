@@ -68,12 +68,10 @@ body {
     flex-wrap: wrap;
 }
 
+
 .section2-subitem {
     height: 5rem;
     width: 5rem;   
-}
-
-.section2-subitem {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,3 +82,44 @@ body {
     height: 5rem;
     width: 5rem; 
 }
+
+
+
+.section3 {
+    height: 100%;
+    padding: 2rem;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.section3-subitem {   
+    position: relative;   
+    display: flex;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    animation: moveElement 5s linear infinite;
+
+}
+
+.section3-subitem img{
+    height: 5rem;
+}
+
+@keyframes moveElement {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: calc(100% - 30px);
+    }
+}
+
