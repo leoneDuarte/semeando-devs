@@ -58,3 +58,7 @@ section * {
     animation:digitar 2s steps(40, end) forwards infinite;
 }
 
+.paginas{
+    border: solid 0.3rem black;
+    padding: 2rem;
+}
