@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+<body>
+    <section class="primary-color">
+        <h1>APRENDENDO JAVASCRIPT</h1>
+
+    </section>
+    <section>
+        <div class="column-flex primary-font">
+            <h2>CALCULADORA</h2>
+            <input class="primary-input" type="number" id="number1">
+            <input class="primary-input" type="number" id="number2">
+
+            <button class="primary-button" type="button" onclick="operacaoMatematica('+')">SOMAR</button>
+            <button class="primary-button" type="button" onclick="operacaoMatematica('-')">SUBTRAIR</button>
+            <button class="primary-button" type="button" onclick="operacaoMatematica('*')">MULTIPLICAR</button>
+            <button class="primary-button" type="button" onclick="operacaoMatematica('/')">DIVIDIR</button>
+
+            <p id="result" class="primary-font"></p>
+        </div>
+    </section>
+
+</body>
+
+<script src="calculadora.js"></script>
+
+</html>
