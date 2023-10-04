@@ -1,8 +1,8 @@
-const myButtom = document.getElementById('myButtom')
+const myButton = document.getElementById('myButton')
+let textoAoClicar = 'CLIQUEI NO BOTAO'
+const clickButton = function (){
+    console.log(myButton)
+}
 
-myButtom.addEventListener('click',function (){
-    
-    console.log(1+1)
-})
-
+myButton.addEventListener('click',clickButton)
 
