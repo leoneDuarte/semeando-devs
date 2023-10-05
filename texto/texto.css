@@ -1,0 +1,64 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+section * {
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.primary-text {
+    color: red;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.secondary-text {
+    color: rgb(9, 133, 191);
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: capitalize;
+}
+
+@keyframes animacao {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.animation {
+    animation: animacao 5s ease-in-out infinite;
+}
+
+
+@keyframes digitar {
+    0% {
+        width: 0;
+    }
+    100% {
+       width: 30%;
+    }
+}
+
+.text-digit{
+    white-space: nowrap;
+    overflow: hidden;
+    animation:digitar 2s steps(40, end) forwards infinite;
+}
+
+.paginas{
+    border: solid 0.3rem black;
+    padding: 2rem;
+}
